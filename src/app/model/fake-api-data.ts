@@ -332,7 +332,7 @@ export class fakeapidata {
   } 
 
   savewish(data: any){
-    const found = this.wishtemp.find(
+    const found = this.carttemp.find(
       (      item: any) => JSON.stringify(item.id) === JSON.stringify(data.id)
     );
     if (!found) {
